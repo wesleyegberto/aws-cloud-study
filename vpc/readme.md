@@ -1,6 +1,6 @@
 # AWS - VPC
 
-Os códigos do Terraform aqui criam a estrutura necessária para montar o ambiente especificado no diagrama.
+Os códigos do Terraform criam a estrutura necessária para montar o ambiente especificado no diagrama.
 
 ## Arquitetura
 
@@ -24,16 +24,4 @@ Arquivos:
   - `rt-public-web`: Route Table da subnet `public-web` com a rota para acessar internet;
   - `rt-database`: Route Table da subnet `database` com a rota para acessar NAT Gateway `nat-database`;
   - `rt-management`: Route Table da subnet `management` com a rota para acessar a NAT Gateway `nat-management`.
-
-## Implantação
-
-```bash
-terraform init
-
-terraform plan
-
-terraform apply
-
-terraform destroy
-```
 
