@@ -3,6 +3,7 @@ resource "aws_instance" "webserver" {
 	# Ubuntu 22
 	ami = "ami-052efd3df9dad4825"
 	instance_type = "t2.micro"
+	# nome da Key-Pair na AWS
 	key_name = "aws-study"
 
 	vpc_security_group_ids = [ aws_security_group.sg-public-web.id ]

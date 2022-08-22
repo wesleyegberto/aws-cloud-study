@@ -1,5 +1,6 @@
-resource "aws_security_group" "sg-public-web" {
-	name = "public-web"
+resource "aws_security_group" "sg-webserver" {
+	name = "webserver"
+	vpc_id = aws_vpc.vpc-elb-study.id
 
 	ingress {
 		from_port   = 80

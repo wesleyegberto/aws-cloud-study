@@ -2,8 +2,9 @@
 
 Repositório para estudo da AWS Cloud.
 
-- [EC2](./ec2/readme.md)
-- [VPC](./vpc/readme.md)
+- [EC2](./ec2/)
+- [VPC](./vpc/)
+- [ELB](./elb/)
 
 ## Instruções
 
