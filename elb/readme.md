@@ -12,7 +12,7 @@ Arquivos:
 
 - `main.tf`: configura o provedor cloud;
 - `variables.tf`: declaram as variáveis utilizadas no Terraform (região AWS e blocos CIDR da VPC e suas subnets);
-- `network.tf`: declara toda a rede necessárias:
+- `network.tf`: declara toda as configurações de rede necessárias:
   - VPC;
   - subnet A na zona `us-east-1a` e a subnet B na zona `us-east-1b`;
   - internet gateway para a VPC e uma NAT gateway para cada subnet;
