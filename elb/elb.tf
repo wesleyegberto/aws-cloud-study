@@ -5,8 +5,8 @@ resource "aws_lb" "elb-webserver" {
 	load_balancer_type = "application"
 	internal = false
 
-	security_groups = [ aws_security_group.sg-webserver.id ]
-	subnets = [ aws_subnet.sn-webserver-a.id, aws_subnet.sn-webserver-b.id ]
+	security_groups = [ aws_security_group.sg-loadbalancer.id ]
+	subnets = [ aws_subnet.sn-public-a.id, aws_subnet.sn-public-b.id ]
 
 	tags = {
 		Name = "elb-webserver"

@@ -22,3 +22,10 @@ variable "vpc-subnet-b-cidr" {
 	default = "10.1.2.0/24"
 }
 
+variable "vpc-public-subnet-a-cidr" {
+	default = "10.1.3.0/24"
+}
+
+variable "vpc-public-subnet-b-cidr" {
+	default = "10.1.4.0/24"
+}
